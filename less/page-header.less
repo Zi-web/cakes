@@ -1,0 +1,57 @@
+@import "variables.less";
+@import "mixins.less";
+@import "normalize.less";
+.page-header {
+	background-color: @color-light-pink-bg;
+	background-image: url("../img/cake-main.png");
+	background-repeat: no-repeat;
+	background-size: auto;
+	background-position-x: right;
+	background-position-y: 100px;
+}
+
+.page-header__wrapper {
+	border: 1px solid blue;
+	padding-top: 50px;
+	.container();
+}
+
+.page-header__logo {
+	
+}
+
+.page-header__promo-text {
+	width: 35%;
+	h1 {
+		font-family: 'playfair_displaybold', Helvetica, Arial, sans-serif;
+    	font-size: 78px;
+    	margin-top: 140px;
+	}
+	p {
+		font-family: 'nautilus_pompiliusregular', Helvetica, Arial, sans-serif;
+    	font-size: 40px;
+	}
+}
+
+.page-header__icons {
+	border: 1px solid green;
+	display: flex;
+	margin-top: 125px;
+}
+
+.page-header__icon {
+	margin: 0;
+	margin-bottom: 240px;
+	border: 1px solid red;
+	display: flex;
+	align-items: center;
+	figcaption {
+		font-family: 'lora-bold-webfont', Helvetica, Arial, sans-serif;
+    	font-size: 14px;
+    	padding-left: 10px;
+	}
+}
+
+.page-header__icon:first-child {
+	margin-right: 60px;
+}

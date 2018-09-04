@@ -1,0 +1,57 @@
+@import "variables.less";
+@import "mixins.less";
+@import "normalize.less";
+.about {
+	background-color: @color-light-pink-bg;
+}
+
+.about__wrapper {
+	.container();
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.about__text {
+	h2 {
+		margin-top: 0;
+		font-family: 'playfair_displaybold', Helvetica, Arial, sans-serif;
+		font-size: 40px;
+	};
+	h3 {
+		font-family: 'introscriptr-h2base-webfont', Helvetica, Arial, sans-serif;
+		font-size: 35px;
+	};
+	h4 {
+		font-family: 'circe-bold', Helvetica, Arial, sans-serif;
+		font-size: 20px;
+	}
+	p {
+		font-family: 'circe-regular', Helvetica, Arial, sans-serif;
+		font-size: 18px;
+	}
+	border: 1px solid blue;
+	flex-basis: 50%;
+	margin-left: auto;
+	margin-right: auto; 
+}
+
+.about__photo {
+	margin-left: auto;
+	margin-right: auto; 
+	-webkit-mask-image: url("../img/about-mask.png");
+	width: 509px;
+	height: 509px;
+	background-image: url("../img/photo-confectioner.jpg");
+	background-position: center;
+}
+
+.about__quote {
+	flex-basis: 50%;
+	margin-left: auto;
+	margin-right: auto; 
+	p {
+		font-family: 'playfair_displaybold_italic', Helvetica, Arial, sans-serif;
+		font-size: 25px;
+	}
+}
