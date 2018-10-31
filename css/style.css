@@ -1098,6 +1098,7 @@ template {
   position: absolute;
   top: 0;
   right: 0;
+  overflow: hidden;
 }
 .slider {
   border: 1px solid blue;
@@ -1814,15 +1815,15 @@ template {
     font-size: 28px;
   }
   .advantage__wrapper {
-    margin: 0px auto;
-    min-width: 728px;
-    max-width: 1220px;
+    min-width: 708px;
+    max-width: 1200px;
     padding-left: 20px;
     padding-right: 20px;
+    /*.container-tablet();*/
   }
   .advantage__first-block {
-    min-width: 728px;
-    max-width: 1200px;
+    /*min-width: 728px;
+		max-width: 1200px;*/
   }
   .advantage__first-block .advantage__first-block--berries {
     width: 290px;
@@ -1856,7 +1857,7 @@ template {
     font-size: 18px;
   }
   .advantage__decor1 {
-    background-image: none;
+    display: none;
   }
   .advantage__decor2 {
     background-image: url("../img/decor1.png");
@@ -1883,10 +1884,11 @@ template {
     background-image: url("../img/decor4.png");
     width: 167px;
     height: 132px;
-    top: 50%;
-    left: 20px;
+    top: 40%;
+    left: 35%;
   }
   .reviews {
+    overflow: hidden;
     /*.container-tablet();*/
     min-width: 728px;
     max-width: 1200px;
@@ -1908,9 +1910,11 @@ template {
     font-size: 22px;
   }
   .reviews::before {
+    overflow: hidden;
     left: -25%;
   }
   .reviews::after {
+    overflow: hidden;
     right: -25%;
   }
   .mySlides2 {
