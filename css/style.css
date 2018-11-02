@@ -453,6 +453,7 @@ template {
 .page-header__icon:first-child {
   margin-right: 60px;
 }
+/*------Мобильная версия-------*/
 .main-nav {
   display: flex;
   width: 100%;
@@ -540,6 +541,7 @@ template {
   background-color: #2d2829;
   box-shadow: 0 8px 0 0 #2d2829, 0 16px 0 0 #2d2829;
 }
+/*------Мобильная версия-------*/
 .btn {
   font-family: 'circe-regular', Helvetica, Arial, sans-serif;
   width: 220px;
@@ -657,6 +659,7 @@ template {
 .our-cake__icon--6 {
   margin-left: auto;
 }
+/*------Мобильная версия-------*/
 .about {
   background-color: #fbebea;
 }
@@ -1540,7 +1543,7 @@ template {
   flex-direction: column;
   margin-right: 50px;
 }
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 319px) and (max-width: 767px) {
   .page-header {
     background-size: 100%;
     background-position-x: center;
@@ -1647,8 +1650,49 @@ template {
     color: #ffffff;
     font-size: 12px;
   }
+  .our-cake__wrapper {
+    margin: 0px auto;
+    min-width: 282px;
+    max-width: 728px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .our-cake__wrapper h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .our-cake__text h4 {
+    font-size: 14px;
+  }
+  .our-cake__text h4 span {
+    font-size: 12px;
+  }
+  .our-cake__icon img {
+    width: 282px;
+    height: 200px;
+  }
+  .our-cake__icon {
+    margin: 0 auto;
+    margin-top: 10px;
+    -webkit-mask-image: url("../img/mask-cake-mob.png");
+    /*min-width: 280px;*/
+    height: 120px;
+    -webkit-mask-size: 100%;
+            mask-size: 100%;
+  }
+  .our-cake__icons {
+    margin: 0;
+    /*max-height: 390px;*/
+  }
+  .our-cake__show {
+    font-size: 0px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
 }
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .page-header {
     background-size: 80%;
   }
@@ -1665,6 +1709,17 @@ template {
   }
   .page-header__icons {
     margin-top: 60px;
+  }
+  .page-header__decor1 {
+    top: 110px;
+    left: 20%;
+  }
+  .page-header__decor2 {
+    display: none;
+  }
+  .page-header__decor3 {
+    top: 90%;
+    right: 15%;
   }
   .main-nav__wrapper {
     /*margin: 0px auto;
@@ -1755,6 +1810,8 @@ template {
     bottom: 20px;
     right: 10px;
   }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
   .about__wrapper {
     margin: 0px auto;
     min-width: 728px;
