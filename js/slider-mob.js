@@ -1,8 +1,7 @@
-var slideIndex = [1,1,1,1];
-var slideId = ["mySlides", "mySlides2", "mySlides3", "mySlides4"]
-showSlides(1, 0);
-showSlides(1, 1);
-showSlides(1, 2);
+if(screen.width < 768) {
+ 
+var slideIndex = [1];
+var slideId = ["mySlides4"]
 showSlides(1, 3);
 
 function plusSlides(n, no) {
@@ -18,4 +17,6 @@ function showSlides(n, no) {
      x[i].style.display = "none";  
   }
   x[slideIndex[no]-1].style.display = "block";  
+}
+
 }
