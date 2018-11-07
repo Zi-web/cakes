@@ -1646,6 +1646,74 @@ template {
     margin-left: 0;
     padding-top: 10px;
   }
+  .contacts {
+    background-image: none;
+    background-color: #fbebea;
+  }
+  .contacts__wrapper {
+    margin: 0px auto;
+    min-width: 282px;
+    max-width: 728px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .contacts__wrapper h2 {
+    margin: 0;
+    padding-top: 20px;
+    font-size: 24px;
+  }
+  .contacts__wrapper h3 {
+    font-size: 22px;
+  }
+  .contacts__content {
+    flex-direction: column;
+  }
+  .contact__communication {
+    font-size: 14px;
+    margin-top: 0;
+    margin-left: 0;
+  }
+  .contact__form {
+    width: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .contact__form legend {
+    font-size: 14px;
+  }
+  .contact__form input[type="text"],
+  .contact__form input[type="email"] {
+    background: #ffffff;
+    border-bottom: none;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+  .contact__form textarea {
+    display: block;
+    font-family: 'lora-bold-webfont', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #6c6869;
+    background: #ffffff;
+    border: none;
+    outline: none;
+    margin: 5px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    max-width: 740px;
+  }
+  .contact__form .contact__message {
+    display: none;
+  }
+  .contact__form button {
+    margin: 20px auto;
+    font-size: 14px;
+    height: 50px;
+    width: 160px;
+  }
+  .social-links {
+    margin-bottom: 20px;
+  }
   .order__topping {
     display: flex;
     flex-direction: column;
@@ -2003,8 +2071,8 @@ template {
     font-size: 14px;
     background: #fbebea;
     border: none;
-    padding-bottom: 20px;
-    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
   }
   .contact__form textarea {
     display: block;
