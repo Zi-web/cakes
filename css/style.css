@@ -1677,6 +1677,7 @@ template {
     width: auto;
     margin-top: 20px;
     margin-bottom: 10px;
+    flex-basis: 100%;
   }
   .contact__form legend {
     font-size: 14px;
@@ -1711,8 +1712,109 @@ template {
     height: 50px;
     width: 160px;
   }
-  .social-links {
-    margin-bottom: 20px;
+  .how-to-order {
+    background-image: none;
+    background-color: #e3353d;
+  }
+  .how-to-order__wrapper {
+    margin: 0px auto;
+    min-width: 282px;
+    max-width: 728px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: url("../img/order-bg-mob.jpg") no-repeat center;
+    background-size: 100%;
+    background-position-y: bottom;
+    background-position-x: center;
+  }
+  .how-to-order__number {
+    font-size: 35px;
+    padding-right: 10px;
+  }
+  .how-to-order__title span {
+    font-size: 16px;
+  }
+  .how-to-order__text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: auto;
+    font-size: 16px;
+  }
+  .how-to-order__text h2 {
+    padding: 0;
+    margin: 0;
+    margin-top: 30px;
+    font-size: 24px;
+    text-align: center;
+  }
+  .how-to-order__text table {
+    margin-top: 20px;
+  }
+  .how-to-order__text table tr {
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 30px;
+  }
+  .how-to-order__text table tr td {
+    vertical-align: top;
+  }
+  .advantage__wrapper {
+    /*position: static;*/
+    margin: 0px auto;
+    min-width: 282px;
+    max-width: 728px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .advantage h2 {
+    font-size: 24px;
+    margin: 10px auto 10px;
+  }
+  .advantage h3 {
+    font-size: 22px;
+  }
+  .advantage__first-block--berries {
+    display: none;
+  }
+  .advantage__first-block {
+    margin: 10px auto 10px;
+    display: flex;
+    align-items: center;
+  }
+  .advantage__first-block figcaption {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    flex-basis: auto;
+  }
+  .advantage__first-block figcaption .advantage__first-block-wrap {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 10px;
+  }
+  .advantage__first-block figcaption .advantage__first-block-wrap p {
+    font-family: 'lora-regular-webfont', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+  }
+  .advantage__first-block figcaption .advantage__first-block-wrap p span {
+    font-size: 16px;
+  }
+  .advantage__first-block figcaption .advantage__first-block-wrap img {
+    margin: 0 auto;
+  }
+  .advantage__decor1,
+  .advantage__decor2,
+  .advantage__decor3,
+  .advantage__decor4,
+  .advantage__decor5,
+  .advantage__decor6 {
+    display: none;
+  }
+  .advantage__second-block {
+    display: none;
   }
   .order__topping {
     display: flex;
