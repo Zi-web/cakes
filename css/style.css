@@ -1607,6 +1607,21 @@ template {
     top: 0;
     left: 0;
   }
+  .about__wrapper {
+    margin: 0px auto;
+    min-width: 282px;
+    max-width: 728px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: space-between;
+		padding-top: 150px;*/
+  }
+  .about__photo {
+    width: 159px;
+    height: 159px;
+  }
   .page-footer {
     background-color: #6c6869;
   }
@@ -1767,6 +1782,16 @@ template {
     padding-left: 20px;
     padding-right: 20px;
   }
+  .advantage {
+    min-width: 282px;
+    max-width: 768px;
+    /*min-height: 650px;
+		max-height: 700px;*/
+    background-image: url("../img/cake-mob2.png");
+    background-repeat: no-repeat;
+    background-position: 50% bottom;
+    background-size: contain;
+  }
   .advantage h2 {
     font-size: 24px;
     margin: 10px auto 10px;
@@ -1814,7 +1839,33 @@ template {
     display: none;
   }
   .advantage__second-block {
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 150px;
+    position: relative;
+  }
+  .advantage__second-block img {
     display: none;
+    /*position: absolute;
+			bottom: -100px;
+			width: 320px;
+			height: 320px;*/
+  }
+  .advantage__second-block figcaption {
+    flex-basis: 45%;
+    margin-right: auto;
+  }
+  .advantage__second-block figcaption h2 {
+    font-size: 24px;
+  }
+  .advantage__second-block figcaption h3 {
+    font-size: 22px;
+    padding-bottom: 0;
+  }
+  .advantage__second-block figcaption p {
+    font-size: 14px;
   }
   .order__topping {
     display: flex;
