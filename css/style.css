@@ -1615,12 +1615,79 @@ template {
     padding-right: 20px;
     display: flex;
     flex-direction: column;
-    /*justify-content: space-between;
-		padding-top: 150px;*/
   }
   .about__photo {
+    display: none;
+  }
+  .about__photo--mob {
+    /*order: 2;*/
+    background-image: url("../img/photo-confectioner.jpg");
+    background-position: center;
+    background-size: contain;
     width: 159px;
     height: 159px;
+    border-radius: 50%;
+    -webkit-mask-image: none;
+  }
+  .about__text {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+  }
+  .about__text h2 {
+    order: 1;
+    font-size: 24px;
+    text-align: center;
+  }
+  .about__text h3 {
+    order: 3;
+    padding: 0;
+    padding-top: 10px;
+    font-size: 22px;
+    font-family: 'nautilus_pompiliusregular', Helvetica, Arial, sans-serif;
+  }
+  .about__text h4 {
+    font-size: 14px;
+  }
+  .about__text p {
+    font-size: 14px;
+  }
+  .about__text--1h4 {
+    order: 4;
+  }
+  .about__text--1p {
+    order: 5;
+  }
+  .about__text--2h4 {
+    order: 6;
+  }
+  .about__text--2p {
+    order: 7;
+  }
+  .about__social--wrapper {
+    order: 2;
+    display: flex;
+  }
+  .about__social p {
+    font-family: 'lora-bold-webfont', Helvetica, Arial, sans-serif;
+  }
+  .social-links--mob {
+    display: flex;
+    flex-direction: column;
+  }
+  .social-link--mob {
+    margin: 10px auto;
+  }
+  .about__quote {
+    margin-bottom: 30px;
+    flex-basis: 100%;
+  }
+  .about__quote p {
+    font-size: 13px;
+    padding-top: 30px;
+  }
+  .about__quote::before {
+    top: -30px;
   }
   .page-footer {
     background-color: #6c6869;
