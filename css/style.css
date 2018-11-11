@@ -1615,6 +1615,7 @@ template {
     padding-right: 20px;
     display: flex;
     flex-direction: column;
+    padding-top: 40px;
   }
   .about__photo {
     display: none;
@@ -1934,6 +1935,24 @@ template {
   .advantage__second-block figcaption p {
     font-size: 14px;
   }
+  .reviews {
+    margin: 0px auto;
+    min-width: 282px;
+    max-width: 728px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .reviews__title {
+    padding-top: 40px;
+    padding-bottom: 10px;
+    font-size: 24px;
+  }
+  .reviews::before {
+    display: none;
+  }
+  .reviews::after {
+    display: none;
+  }
   .order__topping {
     display: flex;
     flex-direction: column;
@@ -2004,11 +2023,29 @@ template {
     font-size: 16px;
   }
   .mySlides {
-    min-width: 590px;
-    max-width: 728px;
+    min-width: 282px;
+    max-width: 520px;
+  }
+  .mySlides .text--reviews {
+    position: static;
+    margin: 0 auto;
+    font-size: 12px;
+    text-align: center;
+  }
+  .mySlides .text--reviews .slider-reviews__text-name {
+    font-size: 14px;
+  }
+  .mySlides .text--reviews .slider-reviews__text-profession {
+    font-size: 12px;
+  }
+  .mySlides__wrapper {
+    display: flex;
+    flex-direction: column;
   }
   .mySlides img {
-    margin-left: 40px;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
   }
   .mySlides4 {
     display: block;
@@ -2064,6 +2101,51 @@ template {
   }
   .order-decor__cake {
     display: none;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .order-form {
+    min-width: 282px;
+    max-width: 728px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  .order-form legend {
+    text-align: center;
+    font-size: 22px;
+  }
+  .order-form label {
+    font-size: 20px;
+  }
+  .order-form input[type="text"] {
+    font-size: 14px;
+    border: 1px solid #6c6869;
+    border-radius: 30px;
+    background: transparent;
+    outline: none;
+    margin: 5px;
+    padding-left: 10px;
+    padding-top: 20px;
+    margin: auto;
+  }
+  .order-form button {
+    margin: 0 auto;
+    align-items: baseline;
+    font-family: 'merriweatherregular', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+  }
+  .order-form button:hover {
+    cursor: pointer;
+  }
+  .order-form__blocks {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .order-form__block {
+    margin: 0 auto;
+    width: auto;
+    padding-bottom: 10px;
   }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
