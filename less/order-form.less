@@ -1,0 +1,139 @@
+@import "variables.less";
+@import "mixins.less";
+@import "normalize.less";
+.order-form {
+	margin: auto;
+	margin-top: 30px;
+	margin-bottom: 80px;
+	legend {
+		font-family: 'playfair_displaybold', Helvetica, Arial, sans-serif;
+		font-size: 27px;
+		text-align: left;
+	}
+	label {
+		font-family: 'nautilus_pompiliusregular', Helvetica, Arial, sans-serif;
+		font-size: 27px;
+		color: @color-pink;
+	}
+	input[type="text"] {
+		font-family: 'lora-regular-webfont', Helvetica, Arial, sans-serif;
+		font-size: 20px;
+		border: none;
+		background: transparent;
+		border-bottom: 1px solid @color-light-gray;
+		outline: none;
+		margin: 5px;
+		padding-left: 10px;
+		padding-top: 40px;
+		margin: auto;
+		&:active {
+		}
+	};
+	button {
+		align-items: baseline;
+		font-family: 'merriweatherregular', Helvetica, Arial, sans-serif;
+		font-size: 18px;
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}
+
+.order-form__blocks {
+	display: flex;
+	align-items: flex-end;
+}
+
+.order-form__block {
+	display: flex;
+	flex-direction: column;
+	margin-right: 50px;
+}
+
+@media (min-width: 319px) and (max-width: 767px) {
+	.order-form {
+		min-width: 282px;
+    	max-width: 728px;
+		margin-top: 20px;
+		margin-bottom: 40px;
+		legend {
+			text-align: center;
+			font-size: 22px;
+		}
+		label {
+			font-size: 20px;
+		}
+		input[type="text"] {
+			font-size: 14px;
+			border: 1px solid @color-light-gray;
+			border-radius: 30px;
+			background: transparent;
+			outline: none;
+			margin: 5px;
+			padding-left: 10px;
+			padding-top: 20px;
+			margin: auto;
+			&:active {
+			}
+		};
+		button {
+			margin: 0 auto;
+			align-items: baseline;
+			font-family: 'merriweatherregular', Helvetica, Arial, sans-serif;
+			font-size: 14px;
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
+	.order-form__blocks {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+	.order-form__block {
+		margin: 0 auto;
+		width: auto;
+		padding-bottom: 10px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+	.order-form {
+		min-width: 638px;
+		padding-left: 20px;
+		padding-right: 20px;
+		margin-top: 20px;
+		margin-bottom: 40px;
+		legend {
+			font-size: 20px;
+		}
+		label {
+			font-size: 20px;
+		}
+		input[type="text"] {
+			font-size: 14px;
+			border: 1px solid @color-light-gray;
+			border-radius: 30px;
+			background: transparent;
+			outline: none;
+			margin: 5px;
+			padding-left: 10px;
+			padding-top: 20px;
+			margin: auto;
+			&:active {
+			}
+		};
+		button {
+			align-items: baseline;
+			font-family: 'merriweatherregular', Helvetica, Arial, sans-serif;
+			font-size: 14px;
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
+	.order-form__block {
+		margin-right: 30px;
+	}
+}

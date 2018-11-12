@@ -1,0 +1,129 @@
+@import "variables.less";
+@import "mixins.less";
+@import "normalize.less";
+.how-to-order {
+	background: url("../img/order1.jpg") no-repeat center;
+	background-size: cover;
+}
+
+.how-to-order__wrapper {
+	.container();
+}
+
+.how-to-order__text {
+	display: flex;
+	flex-direction: column;
+	width: 35%;
+	margin-left: auto;
+	color: @color-white;
+	font-family: 'lora-regular-webfont', Helvetica, Arial, sans-serif;
+	font-size: 20px;
+	h2 {
+		padding: 0;
+		margin: 0;
+		margin-top: 190px;
+		font-family: 'playfair_displaybold', Helvetica, Arial, sans-serif;
+		font-size: 40px;
+	}
+	table {
+		margin-bottom: 240px;
+		margin-top: 20px;
+		tr {
+			display: inline-block;
+			vertical-align: top;
+			padding-top: 30px;
+			td {
+				vertical-align: top;
+			}
+		}
+	}
+}
+
+.how-to-order__number {
+	font-family: 'playfair_displaybold', Helvetica, Arial, sans-serif;
+	font-size: 64px;
+} 
+
+.how-to-order__title {
+	span {
+	font-family: 'lora-bold-webfont', Helvetica, Arial, sans-serif;
+	font-size: 21px;
+	}
+}
+
+@media (min-width: 319px) and (max-width: 767px) {
+	.how-to-order {
+		background-image: none;
+		background-color: @color-order-mob;
+	}
+
+	.how-to-order__wrapper {
+		.container-mob();
+		background: url("../img/order-bg-mob.jpg") no-repeat center;
+		background-size: 100%;
+		background-position-y: bottom;
+		background-position-x: center;
+	}
+	.how-to-order__number {
+		font-size: 35px;
+		padding-right: 10px;
+	}
+	.how-to-order__title span {
+		font-size: 16px;
+	}
+	.how-to-order__text {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		margin-left: auto;
+		font-size: 16px;
+		h2 {
+			padding: 0;
+			margin: 0;
+			margin-top: 30px;
+			font-size: 24px;
+			text-align: center;
+		}
+		table {
+			margin-top: 20px;
+			tr {
+				display: inline-block;
+				vertical-align: top;
+				padding-top: 30px;
+				td {
+					vertical-align: top;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+	.how-to-order {
+		background-size: cover;
+	}
+	.how-to-order__wrapper {
+		.container-tablet();
+	}
+	.how-to-order__text {
+		width: 40%;
+		margin-bottom: 30px;
+		h2 {
+			margin-top: 30px;
+			font-size: 28px;
+		}
+		table {
+			margin-bottom: 40px;
+			margin-top: 20px;
+		}
+	}
+	.how-to-order__number {
+		font-size: 36px;
+	} 
+	.how-to-order__title {
+		font-size: 14px;
+		span {
+			font-size: 16px;
+		}
+	}
+}

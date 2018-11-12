@@ -10,6 +10,7 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	padding-top: 150px;
 }
 
 .about__text {
@@ -30,10 +31,17 @@
 		font-family: 'circe-regular', Helvetica, Arial, sans-serif;
 		font-size: 18px;
 	}
-	border: 1px solid blue;
 	flex-basis: 50%;
 	margin-left: auto;
 	margin-right: auto; 
+}
+
+.about__text h2, .about__text h3 {
+	.scrolling();
+}
+
+.about__text>h2.active, .about__text>h3.active {
+	.scrolling-active();
 }
 
 .about__photo {
@@ -47,11 +55,154 @@
 }
 
 .about__quote {
+	display: flex;
+	flex-direction: column;
 	flex-basis: 50%;
-	margin-left: auto;
-	margin-right: auto; 
+	margin: 0 auto;
+	position: relative;
 	p {
 		font-family: 'playfair_displaybold_italic', Helvetica, Arial, sans-serif;
 		font-size: 25px;
+		text-align: center;
+		padding-top: 80px;
+	}
+	img {
+		margin: 0 auto;
+	}
+}
+
+.about__quote::before {
+	content: '\201D'; /*\201D*/
+	font-size: 100pt;
+	position: absolute;
+  	top: 0px; 
+  	left: 50%; 
+  	color: #fffefe;
+}
+
+@media (min-width: 319px) and (max-width: 767px) {
+	.about__wrapper {
+		.container-mob();
+		display: flex;
+		flex-direction: column;
+		padding-top: 40px;
+	}
+	.about__photo {
+		display: none;
+	}
+	.about__photo--mob {
+		/*order: 2;*/
+		background-image: url("../img/photo-confectioner.jpg");
+		background-position: center;
+		background-size: contain;
+		width: 159px;
+		height: 159px;
+		border-radius: 50%;
+		-webkit-mask-image: none;
+	}
+	.about__text {
+		display: flex;
+		flex-direction: column;
+		flex-basis: 100%;
+		h2 {
+			order: 1;
+			font-size: 24px;
+			text-align: center;
+		};
+		h3 {
+			order: 3;
+			padding: 0;
+			padding-top: 10px;
+			font-size: 22px;
+			font-family: 'nautilus_pompiliusregular', Helvetica, Arial, sans-serif;
+		};
+		h4 {
+			font-size: 14px;
+		}
+		p {
+			font-size: 14px;
+		}
+	}
+	.about__text--1h4 {
+		order: 4;
+	}
+	.about__text--1p {
+		order: 5;
+	}
+	.about__text--2h4 {
+		order: 6;
+	}
+	.about__text--2p {
+		order: 7;
+	}
+	.about__social--wrapper {
+		order: 2;
+		display: flex;
+		margin: 0 auto;
+	}
+	.about__social p {
+		font-family: 'lora-bold-webfont', Helvetica, Arial, sans-serif;
+	}
+	.social-links--mob {
+		display: flex;
+		flex-direction: column;
+	}
+	.social-link--mob {
+		margin: 10px auto;
+	}
+	.about__quote {
+		margin-bottom: 30px;
+		flex-basis: 100%;
+		p {
+			font-size: 13px;
+			padding-top: 30px;
+		}
+	}
+	.about__quote::before {
+	  	top: -30px; 
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+	.about__wrapper {
+		.container-tablet();
+		padding-top: 50px;
+	}
+
+	.about__text {
+		flex-basis: 55%;
+	h2 {
+		font-size: 28px;
+		};
+	h3 {
+		padding: 0;
+		padding-top: 10px;
+		font-size: 26px;
+	};
+	h4 {
+		font-size: 18px;
+	}
+	p {
+		font-family: 'circe-regular', Helvetica, Arial, sans-serif;
+		font-size: 14px;
+		}
+	}
+
+	.about__photo {
+		width: 315px;
+		height: 315px;
+		mask-size: 315px;
+	}
+
+	.about__quote {
+		flex-basis: 80%;
+		p {
+			font-size: 18px;
+			padding-top: 30px;
+		}
+	}
+
+	.about__quote::before {
+	  	top: -20px; 
 	}
 }

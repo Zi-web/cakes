@@ -8,17 +8,44 @@
 	background-size: auto;
 	background-position-x: right;
 	background-position-y: 100px;
+	/*background-position-x: 150%;
+	background-position-y: 100px;*/
+	position: relative;
 }
 
 .page-header__wrapper {
-	border: 1px solid blue;
 	padding-top: 50px;
 	.container();
 }
 
-.page-header__logo {
-	
+
+.page-header__decor1 {
+	position: absolute;
+	background-image: url("../img/strawberry1.png");
+	width: 111px;
+	height: 110px;
+	top: 120px;
+	right: 43%;
 }
+
+.page-header__decor2 {
+	position: absolute;
+	background-image: url("../img/flower.png");
+	width: 63px;
+	height: 60px;
+	top: 320px;
+	right: 55%;
+}
+
+.page-header__decor3 {
+	position: absolute;
+	background-image: url("../img/strawberry2.png");
+	width: 168px;
+	height: 119px;
+	top: 470px;
+	right: 60%;
+}
+
 
 .page-header__promo-text {
 	width: 35%;
@@ -34,7 +61,6 @@
 }
 
 .page-header__icons {
-	border: 1px solid green;
 	display: flex;
 	margin-top: 125px;
 }
@@ -42,7 +68,6 @@
 .page-header__icon {
 	margin: 0;
 	margin-bottom: 240px;
-	border: 1px solid red;
 	display: flex;
 	align-items: center;
 	figcaption {
@@ -54,4 +79,105 @@
 
 .page-header__icon:first-child {
 	margin-right: 60px;
+}
+
+/*------Мобильная версия-------*/
+@media (min-width: 319px) and (max-width: 767px) {
+	.page-header {
+		background-image: url("../img/cake-main2.png");
+		background-size: 100%;
+		background-position-x: center;
+		background-position-y: -150px;
+	}
+
+	.page-header__wrapper {
+		/*padding-top: 50px;*/
+		.container-mob()
+	}
+
+	.page-header__decor1 {
+		display: none;
+	}
+
+	.page-header__decor2 {
+		display: none;
+	}
+
+	.page-header__decor3 {
+		display: none;
+	}
+
+	.page-header__promo-text {		
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		width: 100%;
+		h1 {
+			order: 0;
+			font-family: 'playfair_displaybold', Helvetica, Arial, sans-serif;
+	    	font-size: 40px;
+	    	margin-top: 40%;
+		}
+		p {
+			order: 1;
+			font-family: 'nautilus_pompiliusregular', Helvetica, Arial, sans-serif;
+	    	font-size: 22px;
+		}
+	}
+
+	.page-header__icons {
+		display: flex;
+		flex-direction: column;
+		order: 2;
+		margin-top: 30px;
+	}
+
+	.page-header__icon {
+		margin: 0;
+		margin-bottom: 20px;
+		display: flex;
+		align-items: center;
+		text-align: left;
+		figcaption {
+			font-family: 'lora-bold-webfont', Helvetica, Arial, sans-serif;
+	    	font-size: 14px;
+		}
+	}
+	.page-header__choose {
+		order: 3;
+		margin: 40px auto 30px auto;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+	.page-header {
+		background-image: url("../img/cake-main.png");
+		background-repeat: no-repeat;
+		background-size: 70%;
+		background-position-x: right;
+		background-position-y: 100px;
+	}
+	.page-header__wrapper {
+		padding-top: 0;
+		.container-tablet();
+	}
+	.page-header__icon {
+		margin-bottom: 100px;
+	}
+	.page-header__icons {
+		margin-top: 60px;
+	}
+	.page-header__decor1 {
+		top: 110px;
+		left: 20%;
+	}
+
+	.page-header__decor2 {
+		display: none;
+	}
+
+	.page-header__decor3 {
+		top: 90%;
+		right: 15%;
+	}
 }

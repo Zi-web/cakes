@@ -1,0 +1,282 @@
+@import "variables.less";
+@import "mixins.less";
+@import "normalize.less";
+.advantage {
+	background-color: @color-light-pink-bg;
+	display: flex;
+	flex-direction: column;
+	h2 {
+		margin: 100px auto 25px;
+		font-family: 'playfair_displaybold', Helvetica, Arial, sans-serif;
+		font-size: 45px;
+	}
+	h3 {
+		margin: 0 auto;
+		font-family: 'nautilus_pompiliusregular', Helvetica, Arial, sans-serif;
+    	font-size: 30px
+	}
+}
+
+.advantage__title {
+	.scrolling2();
+}
+
+.advantage__title.active {
+	.scrolling2-active();
+}
+
+.advantage__wrapper {
+	.container();
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+}
+
+.advantage__first-block {
+	display: flex;
+	align-items: center;
+	figcaption {
+		display: flex;
+		flex-direction: column;
+		margin-left: auto;
+		flex-basis: 50%;
+		.advantage__first-block-wrap {
+			display: flex;
+			p {
+				padding-left: 2%;
+				font-family: 'lora-regular-webfont', Helvetica, Arial, sans-serif;
+				font-size: 24px;
+				span {
+					font-family: 'lora-bold-webfont', Helvetica, Arial, sans-serif;
+				}
+			}
+		}
+	}
+}
+
+.advantage__second-block {
+	display: flex;
+	align-items: center;
+	padding-bottom: 40px;
+	figcaption {
+		flex-basis: 45%;
+		margin-right: auto;
+		h3 {
+			padding-bottom: 15px;
+		}
+		p {
+			font-family: 'lora-regular-webfont', Helvetica, Arial, sans-serif;
+			font-size: 24px;
+		}
+	}
+}
+
+.advantage__decor1, .advantage__decor2, .advantage__decor3,
+.advantage__decor4, .advantage__decor5  {
+	position: absolute;
+}
+
+.advantage__decor1 {
+	background-image: url("../img/cake-decor1.png");
+	width: 768px;
+	height: 802px;
+	bottom: -30px;
+	right: 70px;
+}
+
+.advantage__decor2 {
+	background-image: url("../img/decor1.png");
+	width: 52px;
+	height: 54px;
+	top: 130px;
+	left: 0;
+}
+
+.advantage__decor3 {
+	background-image: url("../img/decor2.png");
+	width: 103px;
+	height: 148px;
+	top: -50px;
+	left: 150px;
+}
+
+.advantage__decor4 {
+	background-image: url("../img/decor3.png");
+	width: 51px;
+	height: 48px;
+	top: 70px;
+	left: 43%;
+}
+
+.advantage__decor5 {
+	background-image: url("../img/decor4.png");
+	width: 167px;
+	height: 132px;
+	top: 450px;
+	left: 20px;
+}
+
+@media (min-width: 319px) and (max-width: 767px) {
+	.advantage__wrapper {
+		position: static;
+		.container-mob();
+	}
+	.advantage {
+		min-width: 282px;
+		max-width: 768px;
+		background-image: url("../img/cake-mob2.png");
+		background-repeat: no-repeat;
+		background-position: 50% bottom;
+		background-size: contain;
+	h2 {
+		font-size: 24px;
+		margin: 10px auto 10px;
+		}
+	h3 {
+    	font-size: 22px
+		}
+	}
+	.advantage__first-block--berries {
+		display: none;
+	}
+	.advantage__first-block {
+		margin: 10px auto 10px;
+		display: flex;
+		align-items: center;
+		figcaption {
+			display: flex;
+			flex-direction: column;
+			margin-left: 0;
+			flex-basis: auto;
+			.advantage__first-block-wrap {
+				background-color: @color-white;
+				display: flex;
+				flex-direction: column;
+				text-align: center;
+				padding-top: 10px;
+				p {
+					font-family: 'lora-regular-webfont', Helvetica, Arial, sans-serif;
+					font-size: 14px;
+					span {
+						font-size: 16px;
+					}
+				}
+				img {
+					margin: 0 auto;
+				}
+			}
+		}
+	}
+	.advantage__decor1, .advantage__decor2, .advantage__decor3,
+	.advantage__decor4, .advantage__decor5, .advantage__decor6 {
+		display: none;
+	}
+	.advantage__second-block {
+		margin-bottom: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-bottom: 150px;
+		position: relative;
+		img {
+			display: none;
+		}
+		figcaption {
+			flex-basis: 45%;
+			margin-right: auto;
+			h2 {
+				font-size: 24px;
+			}
+			h3 {
+				font-size: 22px;
+				padding-bottom: 0;
+			}
+			p {
+				font-size: 14px;
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+	.advantage {
+	h2 {
+		font-size: 30px;
+		margin: 30px auto 25px;
+		}
+	h3 {
+    	font-size: 28px
+		}
+	}
+	.advantage__wrapper {
+		min-width: 708px;
+		max-width: 1200px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.advantage__first-block {
+		.advantage__first-block--berries {
+			width: 290px;
+			height: 290px;
+		}
+		figcaption {
+			margin-left: auto;
+			flex-basis: 50%;
+			.advantage__first-block-wrap {
+				display: flex;
+				p {
+					padding-left: 2%;
+					font-size: 16px;
+				}
+			}
+		}
+	}
+	.advantage__second-block {
+		.advantage__first-block--cake {
+			width: 340px;
+			height: 340px;
+		}
+			padding-bottom: 20px;
+		figcaption {
+			margin-right: auto;
+			h3 {
+				padding-bottom: 5px;
+			}
+			p {
+				font-size: 18px;
+			}
+		}
+	}
+	.advantage__decor1 {
+		display: none;
+	}
+	.advantage__decor2 {
+		background-image: url("../img/decor1.png");
+		width: 52px;
+		height: 54px;
+		top: 130px;
+		left: 0;
+	}
+	.advantage__decor3 {
+		background-image: url("../img/decor2.png");
+		width: 103px;
+		height: 148px;
+		top: -80px;
+		left: 100px;
+	}
+	.advantage__decor4 {
+		background-image: url("../img/decor3.png");
+		width: 51px;
+		height: 48px;
+		top: 70px;
+		left: 43%;
+	}
+	.advantage__decor5 {
+		background-image: url("../img/decor4.png");
+		width: 167px;
+		height: 132px;
+		top: 40%;
+		left: 35%;
+	}
+}

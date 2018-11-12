@@ -1,0 +1,33 @@
+@import "variables.less";
+@import "mixins.less";
+@import "normalize.less";
+.social-links {
+	display: flex;
+}
+
+.social-link {
+	text-indent: 100%;
+	white-space: nowrap;
+    overflow: hidden; 
+    margin-right: 20px;
+}
+
+.social-link--in {
+	background: url("../img/icon-in.png") no-repeat center;
+	width: 28px;
+	height: 28px;
+}
+
+.social-link--vk {
+	background: url("../img/icon-vk.png") no-repeat center;
+	width: 41px;
+	height: 29px;
+}
+
+.social-link--bg {
+	display: block;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: @color-light-pink-bg;
+}
