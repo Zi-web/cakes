@@ -1408,7 +1408,8 @@ template {
   font-size: 27px;
   color: #f50049;
 }
-.order-form input[type="text"] {
+.order-form input[type="text"],
+.order-form output[type="text"] {
   font-family: 'lora-regular-webfont', Helvetica, Arial, sans-serif;
   font-size: 20px;
   border: none;
@@ -2101,7 +2102,9 @@ template {
   .order-form label {
     font-size: 20px;
   }
-  .order-form input[type="text"] {
+  .order-form input[type="text"],
+  .order-form output[type="text"] {
+    width: 100%;
     font-size: 14px;
     border: 1px solid #6c6869;
     border-radius: 30px;
@@ -2109,8 +2112,10 @@ template {
     outline: none;
     margin: 5px;
     padding-left: 10px;
+    padding-right: 10px;
     padding-top: 20px;
     margin: auto;
+    text-align: center;
   }
   .order-form button {
     margin: 0 auto;
@@ -2634,7 +2639,9 @@ template {
   .order-form label {
     font-size: 20px;
   }
-  .order-form input[type="text"] {
+  .order-form input[type="text"],
+  .order-form output[type="text"] {
+    width: 100%;
     font-size: 14px;
     border: 1px solid #6c6869;
     border-radius: 30px;
@@ -2642,8 +2649,10 @@ template {
     outline: none;
     margin: 5px;
     padding-left: 10px;
+    padding-right: 10px;
     padding-top: 20px;
     margin: auto;
+    text-align: center;
   }
   .order-form button {
     align-items: baseline;
