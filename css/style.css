@@ -381,6 +381,7 @@ template {
   font-family: 'playfair_displaybold', Helvetica, Arial, sans-serif;
   font-size: 30px;
   color: #2d2829;
+  text-decoration: none;
 }
 .page-header {
   background-color: #fbebea;
