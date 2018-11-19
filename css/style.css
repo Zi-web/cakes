@@ -602,7 +602,8 @@ template {
   flex-direction: column;
   flex-wrap: wrap;
   margin-bottom: 45px;
-  max-height: 651px;
+  /*max-height: 651px;*/
+  height: 651px;
 }
 .our-cake__icon {
   box-sizing: border-box;
@@ -2254,7 +2255,8 @@ template {
     margin-top: 20px;
   }
   .our-cake__icons {
-    max-height: 390px;
+    /*max-height: 390px;*/
+    height: 390px;
   }
   .our-cake__show {
     bottom: 20px;
