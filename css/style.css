@@ -2432,6 +2432,7 @@ template {
     font-size: 28px;
   }
   .advantage__wrapper {
+    flex-direction: column;
     min-width: 708px;
     max-width: 1200px;
     padding-left: 20px;
