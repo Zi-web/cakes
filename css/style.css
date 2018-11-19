@@ -390,8 +390,7 @@ template {
   background-size: auto;
   background-position-x: right;
   background-position-y: 100px;
-  /*background-position-x: 150%;
-	background-position-y: 100px;*/
+  background-position: right 100px;
   position: relative;
 }
 .page-header__wrapper {
@@ -784,6 +783,7 @@ template {
   background-repeat: no-repeat;
   background-position-x: right;
   background-position-y: bottom;
+  background-position: right bottom;
 }
 .contacts__wrapper {
   margin: 0px auto;
