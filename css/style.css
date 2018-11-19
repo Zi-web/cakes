@@ -1588,6 +1588,7 @@ template {
   }
   .our-cake__icons {
     margin: 0 auto;
+    height: 390px;
   }
   .our-cake__show {
     font-size: 0px;
